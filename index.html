@@ -21,7 +21,7 @@
         <a class="logo link" href="./index.html">Web<span class="logo-item">Studio</span></a>
         <ul class="nav-list link list">
             <li class="header-nav-list">
-                <a class="header-nav-link link" href="./index.html">Studio</a>
+                <a class="header-nav-link link current" href="./index.html">Studio</a>
             </li>
             <li class="header-nav-list">
                 <a class="header-nav-link link" href="./portfolio.html">Portfolio</a>
@@ -45,7 +45,7 @@
                 <section class="hero-overlay">
                     <div class="main-container container">
                         <h1 class="hero-caption">Effective Solutions for Your Business</h1>
-                        <button class="button" type="button">Order Service</button>
+                        <button class="button" type="button" data-modal-open>Order Service</button>
                     </div>
                 </section>
         <!-- About section -->
@@ -358,5 +358,16 @@
                 </div>
             </div>
         </footer>
+           <!-- Modal window -->
+           <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-button" type="button" data-modal-close>
+                    <svg class="modal-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    <script src="./modal.js"></script>
 </body>
 </html>
