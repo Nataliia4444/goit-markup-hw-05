@@ -166,6 +166,9 @@ transition: 250ms var(--timing-function);
   background-color: var(--ocean);
 }
 
+.header-nav-link.current{
+  color: var(--ocean);
+}
 
 
 .header-nav-link:hover,
@@ -261,13 +264,11 @@ margin: auto;
 
 
 transition: background-color 250ms var(--timing-function);
-transition: color 250ms var(--timing-function);
 }
 
 .button:hover,
 .button:focus {
 background-color: var(--ocean); 
-color: #ffffff;
 }
 
 
@@ -471,8 +472,8 @@ align-items: center;
 width: 168px;
 height: 88px;
 color: var(--light-slate);
-transition: background-color 250ms var(--timing-function);
-transition:color 250ms var(--timing-function);
+
+transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 	
 .clients-link:hover,
@@ -617,8 +618,7 @@ padding-bottom: 12px;
 padding-top: 12px;
 border-radius: 4px;
 border: 1px solid var(--cornflower);
-transition: background-color  250ms var(--timing-function);
-transition: color 250ms var(--timing-function);
+transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), border 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .main-button:hover,
@@ -701,8 +701,10 @@ transition: transform 250ms var(--timing-function);
 
 }
 
-.body-items:hover .main-overlay{
-transform: translateY(0%);}
+.body-items:hover .main-overlay,
+.body-items:focus .main-overlay {
+transform: translateY(0%);
+}
 
 
 /* Modal window */
@@ -714,12 +716,15 @@ left: 0;
 background-color: rgba(46, 47, 66, 0.4);
 width: 100%;
 height: 100%;
-transition: transform 250ms var(--timing-function);
+
+
+
+transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden .modal{
-  transition: 250ms var(--timing-function);
-  transform: translate(-50%, -50%);
+transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+ transform: translate(-50%, -50%);
 }
 
 
@@ -741,6 +746,7 @@ margin: auto;
 
 .modal-icon{
 fill: var(--navy-blue);
+transition: fill 250ms var(--timing-function);
 }
 
 
