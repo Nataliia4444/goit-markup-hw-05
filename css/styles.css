@@ -709,10 +709,9 @@ transition: transform 250ms var(--timing-function);
 
 }
 
-.body-items:hover .main-overlay,
-.body-items:focus .main-overlay {
+.main-link:hover .main-overlay,
+.main-link:focus .main-overlay {
 transform: translateY(0%);
-transition: transform 250ms var(--timing-function);
 }
 
 
