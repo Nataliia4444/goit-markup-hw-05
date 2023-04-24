@@ -751,6 +751,8 @@ padding: 24px;
 background-color: var(--dairy);
 margin: auto;
 
+
+transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .modal-icon{
