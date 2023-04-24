@@ -790,7 +790,6 @@ cursor: pointer;
 transition: background-color 250ms var(--timing-function);
 }
 
-
 .modal-button:hover,
 .modal-button:focus {
 background-color: var(--ocean);
